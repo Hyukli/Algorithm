@@ -53,8 +53,8 @@ int main(int argc, char *argv[]) {
 			minstep = 100000;
 			memset(mark,false,sizeof(mark));
 			Search(begin_x,begin_y,end_x,end_y,0,-1);
-			if(minstep<100000) printf("Pair %d:%d segments.\n",count,minstep);
-			else printf("Pair %d:impossible.\n",count);
+			if(minstep<100000) printf("Pair %d: %d segments.\n",count,minstep);
+			else printf("Pair %d: impossible.\n",count);
 		}
 		printf("\n");
 	}
